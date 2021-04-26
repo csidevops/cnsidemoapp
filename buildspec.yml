@@ -15,7 +15,9 @@ phases:
       - mvn package
   post_build:
     commands:
-      - echo no action taken durng post build
+      - mvn package
+      - mv target/example.war example.war
 artifacts:
   files:
-    - target/example.war
+    - example.war
+    - .ebextensions/**/*
