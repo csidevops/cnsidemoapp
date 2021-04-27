@@ -20,7 +20,10 @@
 	<header>
 		<div>
 			<h2>
+				<!-- 27/04/2021 - Deepak - Commented out
 				<c:out value="${requestScope.header_title}" />
+				-->
+				<c:out value="My Health Care Clinic" />
 			</h2>
 		</div>
 	</header>
