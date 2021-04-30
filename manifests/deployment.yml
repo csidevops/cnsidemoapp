@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: myhealthcareclinic 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: myhealthcareclinic
+  template:
+    metadata:
+      labels:
+        app: myhealthcareclinic 
+    spec:
+      containers:
+        - name: myhealthcareclinic 
+          image: devsecopspoccontainer.azurecr.io/myhealthcareclinic
+          ports:
+          - containerPort: 80
