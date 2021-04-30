@@ -3,7 +3,6 @@ resources:
     repo: self
 stages: 
     stage: Build
-  - 
     displayName: "Build stage"
     jobs: 
       - 
