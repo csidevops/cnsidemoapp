@@ -15,6 +15,7 @@ variables:
   imageRepository: 'myhealthcareclinic'
   containerRegistry: 'devsecopspoccontainer.azurecr.io'
   dockerfilePath: '**/Dockerfile'
+  Parameters.mavenPOMFile: 'pom.xml'
   tag: '$(Build.BuildId)'
   imagePullSecret: 'devsecopspoccontainer21164ffa-auth'
 
