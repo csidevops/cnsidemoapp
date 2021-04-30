@@ -42,8 +42,8 @@ stages:
       inputs:
         SourceFolder: '$(system.defaultworkingdirectory)'
         Contents: |
-        **/*.war
-        acr-myhealthcareclinic.yaml
+         **/*.war
+         acr-myhealthcareclinic.yaml
         TargetFolder: '$(build.artifactstagingdirectory)'
       condition: succeededOrFailed()
 
