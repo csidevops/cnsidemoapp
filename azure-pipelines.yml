@@ -33,9 +33,9 @@ stages:
     steps:
     
     - task: Maven@3
-  displayName: 'Maven Build'
-  inputs:
-    mavenPomFile: '$(Parameters.mavenPOMFile)'
+      displayName: 'Maven Build'
+      inputs:
+       mavenPomFile: '$(Parameters.mavenPOMFile)'
 
 - task: CopyFiles@2
   displayName: 'Copy Files to: $(build.artifactstagingdirectory)'
