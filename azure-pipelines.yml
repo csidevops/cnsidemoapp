@@ -1,3 +1,6 @@
+pool:
+  name: Azure Pipelines
+  demands: maven
 --- 
 resources: 
   - 
