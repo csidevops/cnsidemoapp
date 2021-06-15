@@ -22,19 +22,6 @@ public class SSEPushManager_ESTest {
   }
 
 
-
-  @Test(timeout = 4000)
-  public void test3()  throws Throwable  {
-      SSEPushManager sSEPushManager0 = new SSEPushManager();
-      MessageEvent messageEvent0 = mock(MessageEvent.class, new ViolatedAssumptionAnswer());
-      List<EventTarget> list0 = sSEPushManager0.broadcast(messageEvent0);
-      sSEPushManager0.mEventTargetList = list0;
-      sSEPushManager0.mEventTargetList = list0;
-      sSEPushManager0.mEventTargetList = null;
-      List<EventTarget> list1 = sSEPushManager0.getTargetList();
-      assertNull(list1);
-  }
-
   @Test(timeout = 4000)
   public void test4()  throws Throwable  {
       SSEPushManager sSEPushManager0 = new SSEPushManager();
