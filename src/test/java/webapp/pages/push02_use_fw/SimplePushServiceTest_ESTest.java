@@ -7,14 +7,6 @@ import webapp.pages.push02_use_fw.SimplePushServiceTest;
 
 public class SimplePushServiceTest_ESTest {
 
-  @Test(timeout = 4000)
-  public void test0()  throws Throwable  {
-      SimplePushServiceTest.LiteHttpClient simplePushServiceTest_LiteHttpClient0 = new SimplePushServiceTest.LiteHttpClient();
-      simplePushServiceTest_LiteHttpClient0.open("http://localhost:8080/example/push?message=", "http://localhost:8080/example/push");
-      simplePushServiceTest_LiteHttpClient0.addHeader("http://localhost:8080/example/push");
-      String string0 = simplePushServiceTest_LiteHttpClient0.send("http://localhost:8080/example/push?message=");
-      assertNull(string0);
-  }
 
   @Test(timeout = 4000)
   public void test1()  throws Throwable  {
