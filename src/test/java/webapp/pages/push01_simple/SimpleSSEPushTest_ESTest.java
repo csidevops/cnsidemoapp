@@ -47,20 +47,7 @@ public class SimpleSSEPushTest_ESTest {
       SimpleSSEPushTest simpleSSEPushTest0 = new SimpleSSEPushTest();
   }
 
-  @Test(timeout = 4000)
-  public void test6()  throws Throwable  {
-      String[] stringArray0 = new String[0];
-      try { 
-        SimpleSSEPushTest.main(stringArray0);
-        fail("Expecting exception: Exception");
-      
-      } catch(Exception e) {
-         //
-         // 
-         //
-         verifyException("webapp.pages.push01_simple.SimpleSSEPushTest$LiteHttpClient", e);
-      }
-  }
+
 
   @Test(timeout = 4000)
   public void test7()  throws Throwable  {
