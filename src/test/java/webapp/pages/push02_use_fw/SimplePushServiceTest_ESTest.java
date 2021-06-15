@@ -51,18 +51,5 @@ public class SimplePushServiceTest_ESTest {
       assertNull(string0);
   }
 
-  @Test(timeout = 4000)
-  public void test7()  throws Throwable  {
-      String[] stringArray0 = new String[1];
-      try { 
-        SimplePushServiceTest.main(stringArray0);
-        fail("Expecting exception: Exception");
-      
-      } catch(Exception e) {
-         //
-         // 
-         //
-         verifyException("webapp.pages.push02_use_fw.SimplePushServiceTest$LiteHttpClient", e);
-      }
-  }
+  
 }
