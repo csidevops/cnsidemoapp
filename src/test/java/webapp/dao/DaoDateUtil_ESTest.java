@@ -19,14 +19,6 @@ public class DaoDateUtil_ESTest {
       assertEquals(0L, long0);
   }
 
-  @Test(timeout = 4000)
-  public void test04()  throws Throwable  {
-      DaoDateUtil daoDateUtil0 = new DaoDateUtil();
-      Timestamp timestamp0 = new Timestamp(1L);
-      long long0 = daoDateUtil0.compareToTodayWith(timestamp0);
-//    assertEquals((-1392409281319L), long0);
-      assertEquals((-1623715200000), long0);
-  }
 
   @Test(timeout = 4000)
   public void test09()  throws Throwable  {
