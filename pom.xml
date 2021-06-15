@@ -120,37 +120,6 @@
 
 		</plugins>
 		<finalName>HealthCareClinic</finalName>
-		<extensions>
-      			<extension>
-        		<groupId>com.google.cloud.artifactregistry</groupId>
-        		<artifactId>artifactregistry-maven-wagon</artifactId>
-        		<version>2.1.1</version>
-      			</extension>
-    		</extensions>
 	</build>
 
-	  <distributionManagement>
-	    <snapshotRepository>
-	      <id>artifact-registry</id>
-	      <url>artifactregistry://asia-south1-maven.pkg.dev/c-si-devsecops/healthcareclinic</url>
-	    </snapshotRepository>
-	    <repository>
-	      <id>artifact-registry</id>
-	      <url>artifactregistry://asia-south1-maven.pkg.dev/c-si-devsecops/healthcareclinic</url>
-	    </repository>
-	  </distributionManagement>
-
-	  <repositories>
-	    <repository>
-	      <id>artifact-registry</id>
-	      <url>artifactregistry://asia-south1-maven.pkg.dev/c-si-devsecops/healthcareclinic</url>
-	      <releases>
-		<enabled>true</enabled>
-	      </releases>
-	      <snapshots>
-		<enabled>true</enabled>
-	      </snapshots>
-	    </repository>
-	  </repositories>
-	
 </project>
