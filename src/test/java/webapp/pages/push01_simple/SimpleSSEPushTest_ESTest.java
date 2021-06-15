@@ -46,14 +46,5 @@ public class SimpleSSEPushTest_ESTest {
   public void test5()  throws Throwable  {
       SimpleSSEPushTest simpleSSEPushTest0 = new SimpleSSEPushTest();
   }
-
-
-
-  @Test(timeout = 4000)
-  public void test7()  throws Throwable  {
-      MockThrowable mockThrowable0 = new MockThrowable();
-      SimpleSSEPushTest.LiteHttpClientException simpleSSEPushTest_LiteHttpClientException0 = new SimpleSSEPushTest.LiteHttpClientException(mockThrowable0);
-      SimpleSSEPushTest.LiteHttpClientException simpleSSEPushTest_LiteHttpClientException1 = new SimpleSSEPushTest.LiteHttpClientException((String) null, simpleSSEPushTest_LiteHttpClientException0);
-      assertFalse(simpleSSEPushTest_LiteHttpClientException1.equals((Object)simpleSSEPushTest_LiteHttpClientException0));
-  }
+  
 }
