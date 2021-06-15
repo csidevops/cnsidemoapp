@@ -51,56 +51,6 @@ public class DaoDateUtil_ESTest {
   }
 
   @Test(timeout = 4000)
-  public void test05()  throws Throwable  {
-      DaoDateUtil daoDateUtil0 = new DaoDateUtil();
-      // Undeclared exception!
-      try { 
-        daoDateUtil0.getTimeShiftedTimestampFromNow((Calendar) null, 0);
-        fail("Expecting exception: NullPointerException");
-      
-      } catch(NullPointerException e) {
-         //
-         // no message in exception (getMessage() returned null)
-         //
-         verifyException("webapp.dao.DaoDateUtil", e);
-      }
-  }
-
-  @Test(timeout = 4000)
-  public void test06()  throws Throwable  {
-      MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar();
-      mockGregorianCalendar0.set(0, (-362));
-      DaoDateUtil daoDateUtil0 = new DaoDateUtil();
-      // Undeclared exception!
-      try { 
-        daoDateUtil0.getTimeShiftedTimestampFromNow(mockGregorianCalendar0, (-215));
-        fail("Expecting exception: IllegalArgumentException");
-      
-      } catch(IllegalArgumentException e) {
-         //
-         // Invalid era
-         //
-         verifyException("java.util.GregorianCalendar", e);
-      }
-  }
-
-  @Test(timeout = 4000)
-  public void test08()  throws Throwable  {
-      DaoDateUtil daoDateUtil0 = new DaoDateUtil();
-      // Undeclared exception!
-      try { 
-        daoDateUtil0.getTodayAsSqlDate((Calendar) null);
-        fail("Expecting exception: NullPointerException");
-      
-      } catch(NullPointerException e) {
-         //
-         // no message in exception (getMessage() returned null)
-         //
-         verifyException("webapp.dao.DaoDateUtil", e);
-      }
-  }
-
-  @Test(timeout = 4000)
   public void test09()  throws Throwable  {
       DaoDateUtil daoDateUtil0 = new DaoDateUtil();
       Date date0 = daoDateUtil0.getTodayAsSqlDate();
@@ -123,19 +73,5 @@ public class DaoDateUtil_ESTest {
       assertEquals(1392409281078L, long0);
   }
 
-  @Test(timeout = 4000)
-  public void test12()  throws Throwable  {
-      DaoDateUtil daoDateUtil0 = new DaoDateUtil();
-      // Undeclared exception!
-      try { 
-        daoDateUtil0.compareToTodayWith((Timestamp) null);
-        fail("Expecting exception: NullPointerException");
-      
-      } catch(NullPointerException e) {
-         //
-         // no message in exception (getMessage() returned null)
-         //
-         verifyException("webapp.dao.DaoDateUtil", e);
-      }
-  }
+ 
 }
