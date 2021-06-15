@@ -35,51 +35,6 @@ public class AesCrypter_ESTest {
       assertEquals("[charsetName=", string0);
   }
 
-  @Test(timeout = 4000)
-  public void test04()  throws Throwable  {
-      AesCrypter.HexCodec aesCrypter_HexCodec0 = new AesCrypter.HexCodec("[charsetName=");
-      try { 
-        aesCrypter_HexCodec0.encode("[charsetName=");
-        fail("Expecting exception: Exception");
-      
-      } catch(Exception e) {
-         //
-         // [charsetName=
-         //
-         verifyException("webapp.framework.AesCrypter$HexCodec", e);
-      }
-  }
-
-  @Test(timeout = 4000)
-  public void test05()  throws Throwable  {
-      AesCrypter.HexCodec aesCrypter_HexCodec0 = new AesCrypter.HexCodec("gN*QIh");
-      byte[] byteArray0 = new byte[1];
-      try { 
-        aesCrypter_HexCodec0.decode(byteArray0);
-        fail("Expecting exception: Exception");
-      
-      } catch(Exception e) {
-         //
-         // gN*QIh
-         //
-         verifyException("webapp.framework.AesCrypter$HexCodec", e);
-      }
-  }
-
-  @Test(timeout = 4000)
-  public void test06()  throws Throwable  {
-      AesCrypter.HexCodec aesCrypter_HexCodec0 = new AesCrypter.HexCodec();
-      Object object0 = new Object();
-      try { 
-        aesCrypter_HexCodec0.decode(object0);
-        fail("Expecting exception: Exception");
-      
-      } catch(Exception e) {
-         //
-         // java.lang.Object cannot be cast to [C
-         //
-         verifyException("webapp.framework.AesCrypter$HexCodec", e);
-      }
   }
 
   @Test(timeout = 4000)
@@ -108,21 +63,7 @@ public class AesCrypter_ESTest {
       assertArrayEquals(new char[] {'0', '0', '0', '0'}, charArray0);
   }
 
-  @Test(timeout = 4000)
-  public void test10()  throws Throwable  {
-      char[] charArray0 = new char[3];
-      try { 
-        AesCrypter.HexCodec.decodeHex(charArray0);
-        fail("Expecting exception: Exception");
-      
-      } catch(Exception e) {
-         //
-         // Odd number of characters.
-         //
-         verifyException("webapp.framework.AesCrypter$HexCodec", e);
-      }
-  }
-
+  
   @Test(timeout = 4000)
   public void test11()  throws Throwable  {
       byte[] byteArray0 = new byte[1];
@@ -130,37 +71,8 @@ public class AesCrypter_ESTest {
       //  // Unstable assertion: assertEquals("66", string0);
   }
 
-  @Test(timeout = 4000)
-  public void test12()  throws Throwable  {
-      AesCrypter.HexCodec aesCrypter_HexCodec0 = new AesCrypter.HexCodec();
-      Object object0 = aesCrypter_HexCodec0.encode("UTF-8");
-      try { 
-        aesCrypter_HexCodec0.encode(object0);
-        fail("Expecting exception: Exception");
-      
-      } catch(Exception e) {
-         //
-         // [C cannot be cast to [B
-         //
-         verifyException("webapp.framework.AesCrypter$HexCodec", e);
-      }
-  }
-
-  @Test(timeout = 4000)
-  public void test13()  throws Throwable  {
-      AesCrypter.HexCodec aesCrypter_HexCodec0 = new AesCrypter.HexCodec();
-      try { 
-        aesCrypter_HexCodec0.decode((Object) "g3][6");
-        fail("Expecting exception: Exception");
-      
-      } catch(Exception e) {
-         //
-         // Odd number of characters.
-         //
-         verifyException("webapp.framework.AesCrypter$HexCodec", e);
-      }
-  }
-
+  
+  
   @Test(timeout = 4000)
   public void test14()  throws Throwable  {
       AesCrypter aesCrypter0 = new AesCrypter();
@@ -198,21 +110,7 @@ public class AesCrypter_ESTest {
       assertNull(string0);
   }
 
-  @Test(timeout = 4000)
-  public void test19()  throws Throwable  {
-      byte[] byteArray0 = new byte[6];
-      AesCrypter.HexCodec aesCrypter_HexCodec0 = new AesCrypter.HexCodec();
-      try { 
-        aesCrypter_HexCodec0.decode(byteArray0);
-        fail("Expecting exception: Exception");
-      
-      } catch(Exception e) {
-         //
-         // Illegal hexadecimal character \u0000 at index 0
-         //
-         verifyException("webapp.framework.AesCrypter$HexCodec", e);
-      }
-  }
+  
 
   @Test(timeout = 4000)
   public void test20()  throws Throwable  {
