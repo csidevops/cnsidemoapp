@@ -35,7 +35,7 @@ public class AesCrypter_ESTest {
       assertEquals("[charsetName=", string0);
   }
 
-  }
+  
 
   @Test(timeout = 4000)
   public void test07()  throws Throwable  {
