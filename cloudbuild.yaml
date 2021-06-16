@@ -10,4 +10,4 @@
      - '-Dsonar.projectKey=healthcareclinic'
      - '-Dsonar.organization=csidemo'
      - '-Dsonar.sources=./src'  
-     - '-Dsonar.java.binaries=/WEB-INF/classes'
+     - '-Dsonar.java.binaries=./${project.build.finalName}/WEB-INF/classes'
