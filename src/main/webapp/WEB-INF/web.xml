@@ -6,7 +6,7 @@
 	<display-name>HealthCareClinic</display-name>
 	
 	<welcome-file-list>
-        <welcome-file>index.htm</welcome-file>
+        <welcome-file>include_00_header.jsp</welcome-file>
         </welcome-file-list>
 	
 	<jsp-config>
