@@ -4,9 +4,11 @@
 	version="3.0">
 
 	<display-name>HealthCareClinic</display-name>
+	<!--
 	<welcome-file-list>
         <welcome-file>index.htm</welcome-file>
         </welcome-file-list>
+	-->
 	<jsp-config>
 		<jsp-property-group>
 			<url-pattern>*.jsp</url-pattern>
@@ -20,7 +22,6 @@
 	</session-config>
 
 	<!-- for debugging, do comment out below -->	
-	<!--
 	<error-page>
 		<error-code>404</error-code>
 		<location>/404.html</location>
@@ -29,5 +30,5 @@
 		<error-code>500</error-code>
 		<location>/500.html</location>
 	</error-page>
-	-->
+	
 </web-app>
