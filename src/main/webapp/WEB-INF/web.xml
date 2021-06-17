@@ -4,6 +4,9 @@
 	version="3.0">
 
 	<display-name>HealthCareClinic</display-name>
+	<welcome-file-list>
+        <welcome-file>index.htm</welcome-file>
+        </welcome-file-list>
 	<jsp-config>
 		<jsp-property-group>
 			<url-pattern>*.jsp</url-pattern>
