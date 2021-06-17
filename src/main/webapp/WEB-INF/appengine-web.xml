@@ -16,7 +16,6 @@
   <runtime>java8</runtime>
   <ssl-enabled>true</ssl-enabled>
   <threadsafe>true</threadsafe>
-  <sessions-enabled>true</sessions-enabled>
-  <service>HealthCareClinic</service>
+  <sessions-enabled>true</sessions-enabled> 
 </appengine-web-app>
   <!-- [END config] -->
