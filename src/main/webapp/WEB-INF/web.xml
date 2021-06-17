@@ -4,9 +4,13 @@
 	version="3.0">
 
 	<display-name>HealthCareClinic</display-name>
-	
+	<jsp-config>
+		<jsp-property-group>
+			<url-pattern>*.jsp</url-pattern>
+			<page-encoding>UTF-8</page-encoding>
+		</jsp-property-group>
+	</jsp-config>
 	<welcome-file-list>
-        <welcome-file>HealthCareClinic</welcome-file>
-        </welcome-file-list>
-	
+		<welcome-file>index.htm</welcome-file>
+	</welcome-file-list>
 </web-app>
