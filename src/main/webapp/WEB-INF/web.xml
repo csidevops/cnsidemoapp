@@ -20,6 +20,7 @@
 	</session-config>
 
 	<!-- for debugging, do comment out below -->	
+	<!--
 	<error-page>
 		<error-code>404</error-code>
 		<location>/404.html</location>
@@ -28,5 +29,5 @@
 		<error-code>500</error-code>
 		<location>/500.html</location>
 	</error-page>
-	
+	-->
 </web-app>
