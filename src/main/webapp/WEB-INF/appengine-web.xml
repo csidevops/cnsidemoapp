@@ -17,7 +17,7 @@
   <service>healthcareclinic</service>
   <version>alpha-001</version>
   <threadsafe>true</threadsafe>
-  <runtime>java8</runtime>
+  <runtime>java11</runtime>
   <ssl-enabled>true</ssl-enabled>
   <sessions-enabled>true</sessions-enabled> 
 </appengine-web-app>
