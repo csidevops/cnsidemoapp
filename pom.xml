@@ -4,17 +4,8 @@
   <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
   <groupId>com.example.appengine</groupId>
-  <artifactId>HealthCareClinic</artifactId>
+  <artifactId>cnsidemoapp</artifactId>
 
-  <!--
-    The parent pom defines common style checks and testing strategies for our samples.
-    Removing or replacing it should not affect the execution of the samples in anyway.
-  -->
-  <parent>
-    <groupId>com.google.cloud.samples</groupId>
-    <artifactId>shared-configuration</artifactId>
-    <version>1.0.23</version>
-  </parent>
 
   <!-- [START compiler] -->
   <properties>  <!-- App Engine Standard currently requires Java 8 -->
@@ -25,11 +16,6 @@
   <!-- [END compiler] -->
 
   <dependencies>
-    <dependency>
-      <groupId>com.google.appengine</groupId>
-      <artifactId>appengine-api-1.0-sdk</artifactId>
-      <version>1.9.89</version>
-    </dependency>
 
     <dependency>
       <groupId>javax.servlet</groupId>
@@ -50,12 +36,6 @@
       <groupId>com.squareup.okhttp3</groupId>
       <artifactId>okhttp</artifactId>
       <version>4.9.1</version>
-    </dependency>
-
-    <dependency>
-      <groupId>com.google.code.gson</groupId>
-      <artifactId>gson</artifactId>
-      <version>2.8.7</version>
     </dependency>
 
     <dependency>
@@ -95,34 +75,7 @@
     </dependency>
 	  
     <!-- Test Dependencies -->
-    <dependency>
-      <groupId>com.google.appengine</groupId>
-      <artifactId>appengine-testing</artifactId>
-      <version>1.9.89</version>
-      <scope>test</scope>
-    </dependency>
-	  
-    <dependency>
-      <groupId>com.google.appengine</groupId>
-      <artifactId>appengine-api-stubs</artifactId>
-      <version>1.9.89</version>
-      <scope>test</scope>
-    </dependency>
-	  
-    <dependency>
-      <groupId>com.google.appengine</groupId>
-      <artifactId>appengine-tools-sdk</artifactId>
-      <version>1.9.89</version>
-      <scope>test</scope>
-    </dependency>
-	  
-    <dependency>
-      <groupId>com.google.truth</groupId>
-      <artifactId>truth</artifactId>
-      <version>1.1.3</version>
-      <scope>test</scope>
-    </dependency>
-	  
+    
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
@@ -140,17 +93,7 @@
 
   <build>
     <plugins>
-      <plugin>
-        <groupId>com.google.cloud.tools</groupId>
-        <artifactId>appengine-maven-plugin</artifactId>
-        <version>2.4.0</version>
-        <configuration>
-          <projectId>GCLOUD_CONFIG</projectId>
-          <version>GCLOUD_CONFIG</version>
-          <deploy.promote>true</deploy.promote>
-          <deploy.stopPreviousVersion>true</deploy.stopPreviousVersion>
-        </configuration>
-      </plugin>
+
 	<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
