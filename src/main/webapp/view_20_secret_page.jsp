@@ -17,10 +17,11 @@
 <c:import url="include_00_header.jsp" charEncoding="UTF-8" />
 
 <div style="text-align: left; background-color: #f0f0f0">
-	<strong>Secret contents Today: <jsp:useBean id="today"
+	<strong>You have all completed the above training as of : <jsp:useBean id="today"
 			class="java.util.Date" scope="page" /> <fmt:formatDate
 			value="${today}" pattern="E MM/dd/yyyy" />
 	</strong>
+	<strong>But, Hands on pending from yourside :-) !!!!</strong>
 </div>
 <br />
 <c:if test="${fn:length(requestScope.secretInfoList) >0}">
