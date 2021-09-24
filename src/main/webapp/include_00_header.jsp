@@ -27,17 +27,7 @@
 	<div style="text-align: left; background-color: #f0f0f0">
 		<strong>Azure DevOps Training Details for C&SI Team </strong>
 	</div>
-	<div>
-		<B>
-			1. Azure DevOps Setup
-		</B>
-		<B>
-			2. Azure DevOps Project Setup
-		</B>
-		<B>
-			3. Azure DevOps CI Pipeline Setup
-		</B>
-		<B>
-			4. Azure DevOps CD Pipeline Setup
-		</B>
-	</div>
+	<div> 1. Azure DevOps Setup </div>
+	<div> 2. Azure DevOps Project </div>
+	<div> 3. Azure DevOps CI Pipeline </div>
+	<div> 4. Azure DevOps CD Pipeline Setup </div>
