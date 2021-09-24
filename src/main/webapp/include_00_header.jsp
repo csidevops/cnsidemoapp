@@ -20,24 +20,24 @@
 	<header>
 		<div>
 			<h2>
-				<c:out value="Azure DevOps Demo Web Application" />
+				<c:out value="Demo Web Application" />
 			</h2>
 		</div>
 	</header>
 	<div style="text-align: left; background-color: #f0f0f0">
-		<strong>Training Details For C&SI Team </strong>
+		<strong>Azure DevOps Training Details for C&SI Team </strong>
 	</div>
 	<div>
-		<h2>
+		<B>
 			1. Azure DevOps Setup
-		</h2>
-		<h2>
+		</B>
+		<B>
 			2. Azure DevOps Project Setup
-		</h2>
-		<h2>
+		</B>
+		<B>
 			3. Azure DevOps CI Pipeline Setup
-		</h2>
-		<h2>
+		</B>
+		<B>
 			4. Azure DevOps CD Pipeline Setup
-		</h2>
+		</B>
 	</div>
