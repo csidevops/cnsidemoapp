@@ -40,51 +40,9 @@
 	<c:when
 		test="${!empty sessionScope.SESSION_KEY_IS_USER_LOGGED_IN && sessionScope.SESSION_KEY_IS_USER_LOGGED_IN==true}">
 	</c:when>
-
-	<c:otherwise>
-		<br />
-				You can see password when you log in.<br />
-	</c:otherwise>
 </c:choose>
-<br />
-<div>
-	<c:forEach var="pi" items="${requestScope.personInfoList}"
-		varStatus="status">
-
-
-		<b>(<c:out value="${status.index}" />)
-		</b>
-		<b>name is ${pi.name}.</b>
-		<b>password is ${pi.password}.</b>
-
-		<%
-			//Get attribute as a java object
-				PersonInfo personInfo = (PersonInfo) pageContext.getAttribute("pi");
-		%>
-
-Lives in
-		<c:choose>
-			<c:when test="${pi.area=='north'}">
-NORTH AREA.
-			</c:when>
-			<c:when test="${pi.area=='center'}">
-CENTER AREA.
-			</c:when>
-			<c:otherwise>
-SOUTH AREA.
-			</c:otherwise>
-		</c:choose>
-		<hr />
-	</c:forEach>
-
-</div>
-
 
 <%@ include file="include_01_footer.jsp"%>
-
-
-
-
 
 </body>
 </html>
