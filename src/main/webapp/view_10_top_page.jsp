@@ -43,7 +43,7 @@
 </c:choose>
 
 
-<!-- <%@ include file="include_01_footer.jsp"%> --> 
+<%@ include file="include_01_footer.jsp"%> 
 
 </body>
 </html>
