@@ -20,32 +20,24 @@
 	<header>
 		<div>
 			<h2>
-				<!-- 27/04/2021 - Deepak - Commented out
-				<c:out value="${requestScope.header_title}" />
-				-->
-				<c:out value="My Health Care Clinic" />
+				<c:out value="Azure DevOps Demo Web Application" />
 			</h2>
 		</div>
 	</header>
 	<div style="text-align: left; background-color: #f0f0f0">
-		<strong>Menu contents </strong>
+		<strong>Training Details For C&SI Team </strong>
 	</div>
-	<nav>
-		<ul>
-			<li><a href="index.htm"><strong>Top page</strong></a></li>
-			<li><a href="secret_page.htm"><strong>Secret page</strong></a></li>
-			<c:choose>
-				<c:when
-					test="${!empty sessionScope.SESSION_KEY_IS_USER_LOGGED_IN && sessionScope.SESSION_KEY_IS_USER_LOGGED_IN==true}">
-					<li><a href="logout.htm"><strong>Log out</strong></a></li>
-				</c:when>
-				<c:otherwise>
-					<li><a href="login.htm"><strong>Log in</strong></a></li>
-				</c:otherwise>
-			</c:choose>
-
-
-		</ul>
-
-
-	</nav>
+	<div>
+		<h2>
+			1. Azure DevOps Setup
+		</h2>
+		<h2>
+			2. Azure DevOps Project Setup
+		</h2>
+		<h2>
+			3. Azure DevOps CI Pipeline Setup
+		</h2>
+		<h2>
+			4. Azure DevOps CD Pipeline Setup
+		</h2>
+	</div>
