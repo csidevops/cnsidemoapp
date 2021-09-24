@@ -31,9 +31,9 @@
 </script>
 
 <div style="text-align: left; background-color: #f0f0f0">
-	<strong>You have completed the above training topics <jsp:useBean id="today"
+	<strong>You have completed the above training topics as of : <jsp:useBean id="today"
 			class="java.util.Date" scope="page" /> <fmt:formatDate
-			value="${today}" pattern="E MM/dd/yyyy" /> But, do not forgot to do the hands-on :-)
+			value="${today}" pattern="E MM/dd/yyyy" /> **************** But, do not forgot to do the hands-on :-) *****************
 	</strong>
 </div>
 <c:choose>
