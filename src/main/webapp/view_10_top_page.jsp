@@ -31,9 +31,9 @@
 </script>
 
 <div style="text-align: left; background-color: #f0f0f0">
-	<strong>Secret contents Today: <jsp:useBean id="today"
+	<strong>You have completed the above training topics <jsp:useBean id="today"
 			class="java.util.Date" scope="page" /> <fmt:formatDate
-			value="${today}" pattern="E MM/dd/yyyy" />
+			value="${today}" pattern="E MM/dd/yyyy" /> But, do not forgot to do the hands-on :-)
 	</strong>
 </div>
 <c:choose>
@@ -42,7 +42,8 @@
 	</c:when>
 </c:choose>
 
-<%@ include file="include_01_footer.jsp"%>
+
+<!-- <%@ include file="include_01_footer.jsp"%> --> 
 
 </body>
 </html>
