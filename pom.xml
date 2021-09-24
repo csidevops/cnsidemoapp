@@ -6,7 +6,9 @@
 
   <groupId>com.Azure</groupId>
   <artifactId>cnsidemoapp</artifactId>  
+  <version>1.0</version>
   <packaging>war</packaging>
+  <name>cnsidemoapp</name>
 
 
   <properties>
@@ -59,5 +61,6 @@
         </plugin>
       </plugins>
     </pluginManagement>
+    <finalName>cnsidemoapp</finalName>
   </build>
 </project>
