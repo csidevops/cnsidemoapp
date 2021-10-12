@@ -20,7 +20,7 @@
 	<header>
 		<div>
 			<h2>
-				<c:out value="Demo Web Application" />
+				<c:out value="Demo Web Application - Version 2.0" />
 			</h2>
 		</div>
 	</header>
