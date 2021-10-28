@@ -139,6 +139,7 @@ resource "azurerm_linux_virtual_machine" "linuxvm" {
 
   computer_name                   = "myvm"
   admin_username                  = "azureuser"
+  admin_password                  = "azureuser"
   disable_password_authentication = false
 
  # admin_ssh_key {
