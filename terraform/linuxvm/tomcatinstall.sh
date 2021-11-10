@@ -23,7 +23,7 @@ git clone https://github.com/csidevops/cnsidemoapp.git
 echo git repoistory has been cloned 
 
 # Copy tomcat service file to tomcat directory 
-cd /cnsidemoapp/terraform/linuxvm/tomcat.service /etc/systemd/system/tomcat.service
+cp /cnsidemoapp/terraform/linuxvm/tomcat.service /etc/systemd/system/tomcat.service
 echo Tomcat service file has been created 
 
 # Start the tomcat service using the above tomcat.service file 
