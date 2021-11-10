@@ -29,7 +29,6 @@ echo Tomcat service file has been created
 
 # Start the tomcat service using the above tomcat.service file 
 systemctl daemon-reload
-systemctl status tomcat
 systemctl enable tomcat
 ufw allow 8080/tcp
 
