@@ -10,6 +10,7 @@ useradd -r -m -U -d /opt/tomcat -s /bin/false tomcat
 echo Tomcat user has been created 
 
 # Install Tomcat (********Before running the script make sure you select the latest version of the tar file********)
+rm -rf /tmp/apache*
 wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.54/bin/apache-tomcat-9.0.54.tar.gz -P /tmp
 tar xf /tmp/apache-tomcat-9.0.54.tar.gz -C /opt/tomcat
 ln -s /opt/tomcat/apache-tomcat-9.0.54 /opt/tomcat/latest
@@ -31,4 +32,19 @@ systemctl daemon-reload
 systemctl status tomcat
 systemctl enable tomcat
 ufw allow 8080/tcp
+
+# Copy tomcat user xml file to tomcat directory 
+cp ./cnsidemoapp/terraform/linuxvm/tomcat-users.xml /opt/tomcat/latest/conf/tomcat-users.xml
+echo Tomcat user xml file has been created 
+
+# Copy tomcat context xml file to tomcat manager directory 
+cp ./cnsidemoapp/terraform/linuxvm/context.xml /opt/tomcat/latest/webapps/manager/META-INF/context.xml
+echo Tomcat context xml file has been created under manager directory
+
+# Copy tomcat context xml file to tomcat host manager directory 
+cp ./cnsidemoapp/terraform/linuxvm/context.xml /opt/tomcat/latest/webapps/host-manager/META-INF/context.xml
+echo Tomcat context xml file has been created under host manager directory
+
+# Restart Tomcat server 
+sudo systemctl restart tomcat
 echo Tomcat service has been started 
