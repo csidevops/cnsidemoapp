@@ -56,9 +56,7 @@ resource "azurerm_network_security_group" "nsg" {
     destination_port_range     = "22"
     source_address_prefix      = "*"
     destination_address_prefix = "*"
-  }
-  
- security_rule {
+ 
     name                       = "Port_8080"
     priority                   = 1011
     direction                  = "Inbound"
