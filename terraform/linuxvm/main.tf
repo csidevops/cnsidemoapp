@@ -137,7 +137,7 @@ resource "azurerm_linux_virtual_machine" "linuxvm" {
     version   = "latest"
   }
 
-  computer_name                   = "myvm"
+  computer_name                   = "linuxvm019"
   admin_username                  = "azureuser"
   admin_password                  = "Azureuser#24"
   disable_password_authentication = false
