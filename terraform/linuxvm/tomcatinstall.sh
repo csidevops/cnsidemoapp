@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Install OpenJDK
-apt update
-echo "Y" | apt install default-jdk
+apt-get update
+echo "Y" | apt-get install default-jdk
 echo JDK installed in the linux server 
 
 # Create Tomcat User
