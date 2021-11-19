@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Install OpenJDK
-apt update
+# apt update - commented out to avoid confirmation 
 apt install default-jdk
 echo JDK installed in the linux server 
 
