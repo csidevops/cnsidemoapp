@@ -46,5 +46,9 @@ cp ./cnsidemoapp/terraform/linuxvm/context.xml /opt/tomcat/latest/webapps/host-m
 echo Tomcat context xml file has been created under host manager directory
 
 # Restart Tomcat server 
-sudo systemctl restart tomcat
+systemctl restart tomcat
 echo Tomcat service has been started 
+
+# Provide Folder permission for artifact deployment
+chmod 777 /opt/tomcat/latest/webapps
+echo Granted folder permissions in tomcat. Ready for deployment. Please proceed... 
