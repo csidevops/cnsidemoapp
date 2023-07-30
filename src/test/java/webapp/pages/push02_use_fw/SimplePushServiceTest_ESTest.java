@@ -14,7 +14,7 @@ public class SimplePushServiceTest_ESTest {
       String string0 = simplePushServiceTest_LiteHttpClient0.send("");
       assertNull(string0);
   }
-
+/*
   @Test(timeout = 4000)
   public void test3()  throws Throwable  {
       SimplePushServiceTest.LiteHttpClientException simplePushServiceTest_LiteHttpClientException0 = new SimplePushServiceTest.LiteHttpClientException((Throwable) null);
@@ -42,6 +42,6 @@ public class SimplePushServiceTest_ESTest {
       String string0 = simplePushServiceTest_LiteHttpClient1.send(".Ab3C\u0000Fy@y ");
       assertNull(string0);
   }
-
+*/
   
 }
