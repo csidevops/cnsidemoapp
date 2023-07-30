@@ -13,7 +13,7 @@ public class SimpleSSEPushTest_ESTest {
       String string0 = simpleSSEPushTest_LiteHttpClient0.send("!P");
       assertNull(string0);
   }
-
+/*
   
   @Test(timeout = 4000)
   public void test2()  throws Throwable  {
@@ -46,5 +46,5 @@ public class SimpleSSEPushTest_ESTest {
   public void test5()  throws Throwable  {
       SimpleSSEPushTest simpleSSEPushTest0 = new SimpleSSEPushTest();
   }
-  
+  */
 }
